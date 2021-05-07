@@ -35,12 +35,14 @@ public class HrApplication implements CommandLineRunner {
 		LocalDateTime employee3StartDate = LocalDateTime.of(2020, Month.MAY, 02, 13, 52, 37);
 		Employee employee3 = new Employee(10003, "Zohan", "Driver", 2800, employee3StartDate);
 		
+		//Fourth employee
+		LocalDateTime employee4StartDate = LocalDateTime.of(2015, Month.NOVEMBER, 07, 8, 00, 53);
+		Employee employee4 = new Employee(10004, "Melissa", "SoftwareDeveloper", 3750, employee4StartDate);
+		
 		System.out.println(employee1.getEmployeeName() + " basic salary: " + employee1.getEmployeeSalary() + " USD and the new salary: " + salaryService.getRaisedSalary(employee1));
 		System.out.println(employee2.getEmployeeName() + " basic salary: " + employee2.getEmployeeSalary() + " USD and the new salary: " + salaryService.getRaisedSalary(employee2));
 		System.out.println(employee3.getEmployeeName() + " basic salary: " + employee3.getEmployeeSalary() + " USD and the new salary: " + salaryService.getRaisedSalary(employee3));
-		
+		System.out.println(employee4.getEmployeeName() + " basic salary: " + employee4.getEmployeeSalary() + " USD and the new salary: " + salaryService.getRaisedSalary(employee4));	
 	}
 	
-	
-
 }
