@@ -1,4 +1,4 @@
-package hu.webuni.hr.nagydavid220;
+package hu.webuni.hr.nagydavid220.model;
 
 import java.time.LocalDateTime;
 

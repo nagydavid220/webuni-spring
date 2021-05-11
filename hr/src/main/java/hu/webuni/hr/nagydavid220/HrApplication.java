@@ -8,6 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import hu.webuni.hr.nagydavid220.model.Employee;
 import hu.webuni.hr.nagydavid220.service.SalaryService;
 
 @SpringBootApplication
@@ -36,7 +37,7 @@ public class HrApplication implements CommandLineRunner {
 		Employee employee3 = new Employee(10003, "Zohan", "Driver", 2800, employee3StartDate);
 		
 		//Fourth employee
-		LocalDateTime employee4StartDate = LocalDateTime.of(2015, Month.NOVEMBER, 07, 8, 00, 53);
+		LocalDateTime employee4StartDate = LocalDateTime.of(2018, Month.NOVEMBER, 07, 8, 00, 53);
 		Employee employee4 = new Employee(10004, "Melissa", "SoftwareDeveloper", 3750, employee4StartDate);
 		
 		System.out.println(employee1.getEmployeeName() + " basic salary: " + employee1.getEmployeeSalary() + " USD and the new salary: " + salaryService.getRaisedSalary(employee1));

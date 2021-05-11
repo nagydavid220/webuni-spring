@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: smart
+hr:
+  employee:
+    smart:
+      workedmonth2: 30
+      workedmonth5: 60
+      workedmonth10: 120
+      percent10: 10
+      percent5: 5
+      percent2: 2

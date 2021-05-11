@@ -1,6 +1,6 @@
 package hu.webuni.hr.nagydavid220.service;
 
-import hu.webuni.hr.nagydavid220.Employee;
+import hu.webuni.hr.nagydavid220.model.Employee;
 
 public interface EmployeeService {
 	
